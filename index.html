@@ -6,10 +6,29 @@
     <link rel="stylesheet" href="style.css">
     <title>Works & Conferences</title>
 </head>
+    
+<script>
+function mostrarPublicacoes() {
+    document.getElementById("publicacoes").style.display = "block";
+    document.getElementById("resumos").style.display = "none";
+}
+
+function mostrarResumos() {
+    document.getElementById("resumos").style.display = "block";
+    document.getElementById("publicacoes").style.display = "none";
+}
+</script>
+    
 <body>
+
+<div class = "buttons">
+    <button onclick="mostraPublicacoes()">Publicações</button>
+    <button onclick="mostraResumos()"> Resumos e Congressos</button>
+</div>
 
 <h1>Works & Conferences</h1>
 
+<div id="publicacoes">
 <h2>Publicações</h2>
 
 <div>
@@ -47,6 +66,12 @@
     <p>Study of the structural, chemical, and thermoluminescence properties of rose quartz from Minas Gerais, including a comparative analysis of kinetic parameters obtained using multiple TL analysis methods.</p>
 </div>
 
+
+
+</div>
+
+
+<div id="resumos" style="display:none;">
 <h2>Apresentações em Congressos</h2>
 
 <h3>Oral e Pôster (primeiro autor)</h3>
