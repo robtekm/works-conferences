@@ -23,27 +23,57 @@ h1 {
     color: #2c3e50;
     font-size: 2rem;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
+h1 i {
+    color: #3498db;
+}
+
+/* H2 = seções principais com ícone em círculo azul */
 h2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
     color: #2c3e50;
     font-size: 1.5rem;
     border-bottom: 2px solid #3498db;
     margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
 }
 
 h2 i {
-    color: #3498db;
-    margin-right: 10px;
+    background-color: #3498db;
+    color: white;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 8px rgba(52, 152, 219, 0.3);
 }
 
+/* H3 = subseções com ícone colorido simples */
 h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #34495e;
     font-size: 1.15rem;
-    margin-top: 25px;
-    margin-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 i {
+    color: #3498db;
+    font-size: 1rem;
 }
 
 /* ============ TEXTO ============ */
@@ -72,14 +102,15 @@ li {
 
 button {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 0 5px;
-    border: 1px solid #3498db;
+    border: 2px solid #3498db;
     background-color: white;
     color: #3498db;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 8px;
     font-family: inherit;
+    font-weight: 600;
     transition: all 0.2s ease;
 }
 
@@ -91,8 +122,9 @@ button:hover {
 button.ativo {
     background-color: #3498db;
     color: white;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
 }
 
 button i {
-    margin-right: 6px;
+    margin-right: 8px;
 }
